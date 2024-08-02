@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="overflow-x-hidden">
+    <header class="bg-[#1a1a1a] row px-5 py-3 justify-between items-center border-b border-[#242424]">
+        <div class="bg-[#242424] rounded-full">
+            <button class="text-white px-5"><i class="bi bi-search "></i></button>
+            <input type="text" placeholder="جستجو کنید"
+                class="bg-[#242424] text-right border-none outline-none text-white w-72 focus:bg-[#333] py-3 px-5 rounded-r-full text-xl">
+        </div>
+        <figure class="w-28 flex items-center mr-20">
+            <figcaption class="text-white text-nowrap">
+                <h1 class="text-3xl font-bold">سانگ سرا</h1>
+            </figcaption>
+            <img src="img/logo.png" alt="logo">
+        </figure>
+    </header>
+
+    <main class="bg-[#1a1a1a] p-5">
+        <div class="row">
+            <figure class="flex w-full lg:w-1/2 h-[300px]  mb-10">
+                <img src="img/1.jpeg" id="pic"
+                    class="rounded-full w-[300px] h-full bg-cover border-4 border-[#242424] mr-10" alt="music logo"
+                    id="musicLogo">
+                <figcaption>
+                    <h3 class="text-2xl text-white mb-5">Lo-Fi Music</h3>
+                    <p class="text-gray-500">Chill - Work Day - Coding - Study</p>
+                </figcaption>
+            </figure>
+
+            <div class="w-full lg:w-1/3 text-center" id="title">
+                <h3 class="text-white text-2xl my-8">Lo-Fi Musics</h3>
+                <p class="text-gray-500 text-xl my-8">Focus my friend</p>
+                <div class="my-8">
+                    <div class="row justify-between text-white mb-5">
+                        <span id="currentTime">0:00</span>
+                        <span id="maxDuration">0:00</span>
+                    </div>
+                    <div id="progress-area" class="w-full h-1 rounded-full cursor-pointer bg-[#333]">
+                        <div id="progress-bar" class="w-0 relative">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between my-8">
+                    <button id="prev" class="text-white hover:text-[#fbca07] duration-300 text-2xl items-center"><i
+                            class="bi bi-chevron-double-left"></i></button>
+                    <button id="left" class="text-white hover:text-[#fbcb07] duration-300 text-2xl -scale-x-100"><i
+                            class="bi bi-arrow-clockwise "></i></button>
+                    <button id="pause" class="text-white hover:text-[#fbcb07] duration-300 text-3xl rounded-full"><i
+                            class="bi bi-pause-fill"></i></button>
+                    <button id="right" class="text-white hover:text-[#fbcb07] duration-300 text-2xl"><i
+                            class="bi bi-arrow-clockwise "></i></button>
+                    <button id="next" class="text-white hover:text-[#fbcb07] duration-300 text-2xl"><i
+                            class="bi bi-chevron-double-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <ul class="row mt-10 flex-col" id="playList">
+
+        </ul>
+    </main>
+
+    <footer>
+        <div>
+            <figure>
+                <img src="img/Screenshot_20240628-192743.png" alt="footer-img">
+            </figure>
+            <nav>
+                <a href="https://www.instagram.com/ali_mohebbi_developer/"><i class="icon-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/ali-mohebbi-7165b7265/"><i class="icon-linkedin"></i></a>
+                <a href="https://github.com/Ali-Mohebbi-Developer"><i class="icon-github-circled"></i></a>
+                <a href="alimohebbi565@gmail.com"><i class="icon-gmail"></i></a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
