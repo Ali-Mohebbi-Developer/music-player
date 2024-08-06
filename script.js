@@ -214,7 +214,7 @@ function loadTrack(index) {
 
   audio.addEventListener("timeupdate", updateProgress);
 
-  audio.addEventListener("ended", nextTrack); // اضافه کردن رویداد ended
+  audio.addEventListener("ended", nextTrack);
 }
 
 function playPause() {
